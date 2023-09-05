@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;  /* Dark Background */
+    color: #FFFFFF;  /* Light text color */
+}
+
+header {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header #logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #1E1E1E;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header, section, footer {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);  /* Box shadow for depth */
+    backdrop-filter: blur(10px); /* Add blur effect */
+  background-color: rgba(30, 30, 30, 0.8); /* Make background slightly transparent */
+}
+
+header #logo, nav ul li, section h1, section h2, footer {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);  /* Text shadow for light play */
+}
+
+section {
+    background: linear-gradient(145deg, #1A1A1A, #1E1E1E);  /* Background gradient for light play */
+}
+#bg {
+    position: fixed;
+    background: cover;
+    background: radial-gradient(ellipse at bottom, #000000 0%, #1a1a1a 50%, #333333 100%);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: -2;
+  }
+  
+  .cursor-highlight {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 70%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;  /* So that the highlight doesn't block mouse events */
+    z-index: 1000;
+}
+
+
+  .text-highlight {
+    color: #FFCC00 !important; /* A color that contrasts with black and fits a dark theme */
+  }
